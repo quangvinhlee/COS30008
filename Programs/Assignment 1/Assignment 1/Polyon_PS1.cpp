@@ -1,5 +1,3 @@
-// Polygon_PS1.cpp
-
 #include "Polygon.h"
 #include <cmath>
 

@@ -17,9 +17,6 @@ void runP1()
 	Vector3D
 		b(static_cast<float>(M_PI), static_cast<float>(M_PI), static_cast<float>(M_PI));
 	Vector3D c(1.23456789f, 9.876543210f, 12435.0987654321f);
-	float d = 12435.0987654321f;
-	cout << abs(d) << endl;
-	cout <<  abs(d) - round(d) << endl;
 	cout << "Vector a: " << a.toString() << endl;
 	cout << "Vector b: " << b.toString() << endl;
 	cout << "Vector c: " << c.toString() << endl;

@@ -53,12 +53,10 @@ Matrix3x3 Matrix3x3::inverse() const {
 
 std::ostream& operator<<(std::ostream& oStream, const Matrix3x3& aMatrix)
 {
-    std::stringstream ss;
+    std::stringstream stringStream;
+    
+    stringStream << "[" << aMatrix.row(0) << ", " << aMatrix.row(1) << ", " << aMatrix.row(2) << "]";
 
-    ss << std::setprecision(5); // Adjust precision as needed
-
-    ss << "[" << aMatrix.row(0) << ", " << aMatrix.row(1) << ", " << aMatrix.row(2) << "]";
-
-    return oStream << ss.str(); // Output the stringstream content to the ostream
+    return oStream << stringStream.str();
 
 }
