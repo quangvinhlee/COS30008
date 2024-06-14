@@ -1,4 +1,3 @@
-// Matrix3x3_PS1.cpp
 #include "Matrix3x3.h"
 #include "Vector3D.h"
 #include <sstream>

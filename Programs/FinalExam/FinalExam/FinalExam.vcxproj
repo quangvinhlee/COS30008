@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f1e73c25-a405-4441-bb01-e9cc13364cee}</ProjectGuid>
-    <RootNamespace>Assignment1</RootNamespace>
+    <ProjectGuid>{ac9fe01a-b321-45e4-b507-6174a3b19b57}</ProjectGuid>
+    <RootNamespace>FinalExam</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -128,24 +128,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Matrix3x3.h" />
-    <ClInclude Include="Polygon.h" />
-    <ClInclude Include="Vector2D.h" />
-    <ClInclude Include="Vector3D.h" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="DoublyLinkedListIterator.h" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Matrix3x3.cpp" />
-    <ClCompile Include="Matrix3x3_PS1.cpp" />
-    <ClCompile Include="Polygon.cpp" />
-    <ClCompile Include="Polygon_PS1.cpp" />
-    <ClCompile Include="Vector2D.cpp" />
-    <ClCompile Include="Vector3D.cpp" />
-    <ClCompile Include="Vector3D_PS1.cpp" />
+    <ClCompile Include="PalindromeStringIterator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="data.txt" />
-    <Text Include="Parallelogram.txt" />
+    <ClInclude Include="DoublyLinkedList.h" />
+    <ClInclude Include="DynamicQueue.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="PalindromeStringIterator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

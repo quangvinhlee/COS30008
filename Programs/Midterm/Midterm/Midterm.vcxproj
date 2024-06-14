@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f1e73c25-a405-4441-bb01-e9cc13364cee}</ProjectGuid>
-    <RootNamespace>Assignment1</RootNamespace>
+    <ProjectGuid>{eb0e9c9a-19ac-40a8-a2e2-6828101be722}</ProjectGuid>
+    <RootNamespace>Midterm</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -128,24 +128,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Matrix3x3.h" />
-    <ClInclude Include="Polygon.h" />
-    <ClInclude Include="Vector2D.h" />
-    <ClInclude Include="Vector3D.h" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="keyProvider.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Matrix3x3.cpp" />
-    <ClCompile Include="Matrix3x3_PS1.cpp" />
-    <ClCompile Include="Polygon.cpp" />
-    <ClCompile Include="Polygon_PS1.cpp" />
-    <ClCompile Include="Vector2D.cpp" />
-    <ClCompile Include="Vector3D.cpp" />
-    <ClCompile Include="Vector3D_PS1.cpp" />
+    <ClCompile Include="VigenereForwardIterator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="data.txt" />
-    <Text Include="Parallelogram.txt" />
+    <ClInclude Include="KeyProvider.h" />
+    <ClInclude Include="VigenereForwardIterator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

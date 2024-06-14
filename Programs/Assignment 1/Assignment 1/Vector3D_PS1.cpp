@@ -4,44 +4,17 @@
 #include <iomanip>
 
 std::string Vector3D::toString() const noexcept {
-    std::stringstream stringStream;
+    auto formatCoordinate = [](float coord) {
+        int precision = (std::abs(coord - std::round(coord)) < 0.0001f) ? 0 : (std::abs(coord) > 10000.0f) ? 1 : 4;
+        std::stringstream ss;
+        ss << std::setprecision(precision) << std::fixed << coord;
+        return ss.str();
+        };
 
-    int xPrecision = 4;  
-
-    if (std::abs(x() - std::round(x())) < 0.0001) {
-        xPrecision = 0;  
-    }
-    else if (std::abs(x()) > 10000.0f) {
-        xPrecision = 1;  
-    }
-
-    stringStream << "[" << std::setprecision(xPrecision) << std::fixed << x() << ", ";
-
-    int yPrecision = 4;
-
-    if (std::abs(y() - std::round(y())) < 0.0001) {
-        yPrecision = 0;
-    }
-    else if (std::abs(y()) > 10000.0f) {
-        yPrecision = 1;
-    }
-
-    stringStream << std::setprecision(yPrecision) << std::fixed << y() << ", ";
-
-    int zPrecision = 4;
-
-    if (std::abs(w() - std::round(w())) < 0.0001) {
-        zPrecision = 0;
-    }
-    else if (std::abs(w()) > 10000.0f) {
-        zPrecision = 1;
-    }
-
-    stringStream << std::setprecision(zPrecision) << std::fixed << w() << "]";
-
-    return stringStream.str();
+    return "[" + formatCoordinate(x()) + ", " + formatCoordinate(y()) + ", " + formatCoordinate(w()) + "]";
 }
 
+// Change the operator<< from Vctor3D.cpp file to this
 std::ostream& operator<<(std::ostream& oStream, const Vector3D& aVector) {
     return oStream << aVector.toString();
 }

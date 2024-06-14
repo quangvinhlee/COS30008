@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f1e73c25-a405-4441-bb01-e9cc13364cee}</ProjectGuid>
-    <RootNamespace>Assignment1</RootNamespace>
+    <ProjectGuid>{91ecfbdb-09e1-4263-a600-e4b63be90ee5}</ProjectGuid>
+    <RootNamespace>Lab06</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -128,24 +128,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Matrix3x3.h" />
-    <ClInclude Include="Polygon.h" />
-    <ClInclude Include="Vector2D.h" />
-    <ClInclude Include="Vector3D.h" />
+    <ClInclude Include="DataWrapper.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="OrderingForwardIterator.h" />
+    <ClInclude Include="SimpleForwardIterator.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DataWrapper.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Matrix3x3.cpp" />
-    <ClCompile Include="Matrix3x3_PS1.cpp" />
-    <ClCompile Include="Polygon.cpp" />
-    <ClCompile Include="Polygon_PS1.cpp" />
-    <ClCompile Include="Vector2D.cpp" />
-    <ClCompile Include="Vector3D.cpp" />
-    <ClCompile Include="Vector3D_PS1.cpp" />
+    <ClCompile Include="OrderingFowardIterator.cpp" />
+    <ClCompile Include="SimpleForwardIterator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="data.txt" />
-    <Text Include="Parallelogram.txt" />
+    <Text Include="Data_1.txt" />
+    <Text Include="Data_2.txt" />
+    <Text Include="Data_3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
